@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+
+<body>
+
+<div th:replace="fragments :: page-header"></div>
+
+<div class="container body-content">
+
+    <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+    <h1 th:text="${heading}"></h1>
+
+        <h2>Congratulations! You have answered correctly.</h2>
+
+
+    <hr />
+
+</div>
+
+</body>
+</html>
